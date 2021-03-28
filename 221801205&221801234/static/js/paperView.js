@@ -29,7 +29,7 @@ let vm = new Vue({
         "models, Histograms , Humans, Kernel , Robustness , Shape , Support vector machine classification, Support vector\n" +
         "machines\" ,\"meeting\":\"ICCV\" , \"name\":\"3D human pose search using oriented\n" +
         "cylinders\", \"ur1\" :\"https: //doi. org/10.1109/ICCVW.2009.5457722\", \"year\" :\"2009\"}"},
-        // title:"",
+         title:"",
         // abstract:"信息: Server startup in 955 ms\n" +
         //     "{\"abstract\":\"In this study, We present a representation based on a new 3D search technique for volumetric human poses which is\n" +
         //     "then used to recognize actions in three dimensional video sequences. We generate a set of cylinder like 3D kernels in various\n" +

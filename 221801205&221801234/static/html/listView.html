@@ -135,8 +135,10 @@
                             <td class="meeting">{{todo.meeting}}</td>
                             <td class="date">{{todo.year}}</td>
                             <td class="keyWord">{{todo.keywords}}</td>
-                            <td class="see" v-show="true"><img alt="" src="../img/see.png" @click="send(todo.name)"  /></td>
-                            <td class="delete_btn" v-show="true"><img alt="" src="../img/delete.png"/></td>
+                            <td class="see" v-show="true"><img  alt="" src="../img/see.png"  onmouseover="this.src='../img/see_.png'"
+                                                               onmouseout="this.src='../img/see.png'" @click="send(todo.name)" /></td>
+                            <td class="delete_btn"  v-show="true"><img  alt="" src="../img/delete.png" onmouseover="this.src='../img/delete_.png'"
+                                                                      onmouseout="this.src='../img/delete.png'" @click="deleteD(index)"/></td>
                         </tr>
                         </tbody>
                     </table>

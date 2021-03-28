@@ -13,6 +13,7 @@ let vm = new Vue({
         option:1,
         tData:"",
         tp:[],
+
         //后端向前端接收数据
         list: [{"meeting":"CPVR","name":"wwsse","keywords":"weiwei,si","year":"2020"},
             {"meeting":"CPR","name":"wwse","keywords":"si","year":"2021"}],
@@ -73,6 +74,13 @@ let vm = new Vue({
                 this.error=!this.error;
             }
 
+        },
+
+
+        //删除
+        deleteD(index){
+            this.list.splice(index,1);
+            this.tp=this.list;
         },
 
         //跳转详情页
