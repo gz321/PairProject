@@ -2,11 +2,49 @@
 let url = 'http://localhost:8080/MyShop_war_exploded/User';
 
 let vm = new Vue({
-
-    el:"#app",
+    el:".container",
     data:{
-        list:[],
-        title:""
+        list:{abstract:"信息: Server startup in 955 ms\n" +
+"{\"abstract\":\"In this study, We present a representation based on a new 3D search technique for volumetric human poses which is\n" +
+"then used to recognize actions in three dimensional video sequences. We generate a set of cylinder like 3D kernels in various\n" +
+"These kernels are searched over 3D volumes to find high response regions. The distribution of these\n" +
+"responses are then used to represent a 3D pose. We use the proposed representation for (i) pose retrieval using Nearest Neighbor\n" +
+"(NN) based classification and Support Vector Machine (SVM) based classification methods, and for (ii) action recognition on a\n" +
+"set of actions using Dynamic Time Warping (DTW) and Hidden Markov Model (HMM) based classification methods. Evaluations on IXMAS\n" +
+"dataset supports the effectiveness of such a robust pose representation.\" , \" keywords\" :\"Conferences, Engine cylinders, Hidden Markov\n" +
+"models, Histograms , Humans, Kernel , Robustness , Shape , Support vector machine classification, Support vector\n" +
+"machines\" ,\"meeting\":\"ICCV\" , \"name\":\"3D human pose search using oriented\n" +
+"cylinders\", \"ur1\" :\"https: //doi. org/10.1109/ICCVW.2009.5457722\", \"year\" :\"2009\"}",
+    url:"http://www.baidu.com",
+    year:"2020",
+    meeting:"CPVR",
+    keywords:"信息: Server startup in 955 ms\n" +
+        "{\"abstract\":\"In this study, We present a representation based on a new 3D search technique for volumetric human poses which is\n" +
+        "then used to recognize actions in three dimensional video sequences. We generate a set of cylinder like 3D kernels in various\n" +
+        "These kernels are searched over 3D volumes to find high response regions. The distribution of these\n" +
+        "responses are then used to represent a 3D pose. We use the proposed representation for (i) pose retrieval using Nearest Neighbor\n" +
+        "(NN) based classification and Support Vector Machine (SVM) based classification methods, and for (ii) action recognition on a\n" +
+        "set of actions using Dynamic Time Warping (DTW) and Hidden Markov Model (HMM) based classification methods. Evaluations on IXMAS\n" +
+        "dataset supports the effectiveness of such a robust pose representation.\" , \" keywords\" :\"Conferences, Engine cylinders, Hidden Markov\n" +
+        "models, Histograms , Humans, Kernel , Robustness , Shape , Support vector machine classification, Support vector\n" +
+        "machines\" ,\"meeting\":\"ICCV\" , \"name\":\"3D human pose search using oriented\n" +
+        "cylinders\", \"ur1\" :\"https: //doi. org/10.1109/ICCVW.2009.5457722\", \"year\" :\"2009\"}"},
+        // title:"",
+        // abstract:"信息: Server startup in 955 ms\n" +
+        //     "{\"abstract\":\"In this study, We present a representation based on a new 3D search technique for volumetric human poses which is\n" +
+        //     "then used to recognize actions in three dimensional video sequences. We generate a set of cylinder like 3D kernels in various\n" +
+        //     "These kernels are searched over 3D volumes to find high response regions. The distribution of these\n" +
+        //     "responses are then used to represent a 3D pose. We use the proposed representation for (i) pose retrieval using Nearest Neighbor\n" +
+        //     "(NN) based classification and Support Vector Machine (SVM) based classification methods, and for (ii) action recognition on a\n" +
+        //     "set of actions using Dynamic Time Warping (DTW) and Hidden Markov Model (HMM) based classification methods. Evaluations on IXMAS\n" +
+        //     "dataset supports the effectiveness of such a robust pose representation.\" , \" keywords\" :\"Conferences, Engine cylinders, Hidden Markov\n" +
+        //     "models, Histograms , Humans, Kernel , Robustness , Shape , Support vector machine classification, Support vector\n" +
+        //     "machines\" ,\"meeting\":\"ICCV\" , \"name\":\"3D human pose search using oriented\n" +
+        //     "cylinders\", \"ur1\" :\"https: //doi. org/10.1109/ICCVW.2009.5457722\", \"year\" :\"2009\"}",
+        // url:"http://www.baidu.com",
+        // year:"2020",
+        // meeting:"CPVR",
+        // keywords:"weiwei,si"
     },
     methods:{
         fun(tit) {
@@ -22,11 +60,10 @@ let vm = new Vue({
 
         },
 
-
         get(){
             this.title = window.location.href.split('=')[1];
             //逻辑
-            alert(this.title);
+           // alert(this.title);
             this.fun(this.title);
         },
 
