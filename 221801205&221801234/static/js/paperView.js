@@ -1,9 +1,5 @@
 // 服务端请求地址
-<<<<<<< Updated upstream
-let url = 'http://localhost:8080/MyShop_war_exploded/User';
-=======
 let url = 'http://localhost:8080/crawler_war_exploded/PaperListDetailByTitle';
->>>>>>> Stashed changes
 
 let vm = new Vue({
     el:".container",
@@ -33,11 +29,7 @@ let vm = new Vue({
         "models, Histograms , Humans, Kernel , Robustness , Shape , Support vector machine classification, Support vector\n" +
         "machines\" ,\"meeting\":\"ICCV\" , \"name\":\"3D human pose search using oriented\n" +
         "cylinders\", \"ur1\" :\"https: //doi. org/10.1109/ICCVW.2009.5457722\", \"year\" :\"2009\"}"},
-<<<<<<< Updated upstream
-         title:"",
-=======
          name:"",
->>>>>>> Stashed changes
         // abstract:"信息: Server startup in 955 ms\n" +
         //     "{\"abstract\":\"In this study, We present a representation based on a new 3D search technique for volumetric human poses which is\n" +
         //     "then used to recognize actions in three dimensional video sequences. We generate a set of cylinder like 3D kernels in various\n" +
@@ -62,10 +54,7 @@ let vm = new Vue({
             var that = this;
             axios.post(url,data).then(function (response) {
                 that.list = response.data;
-<<<<<<< Updated upstream
-=======
                 //that.list.name = that.list.name.decode('utf-8');
->>>>>>> Stashed changes
             }).catch(function (error) {
                 console.log(error);
             });
@@ -78,13 +67,6 @@ let vm = new Vue({
            // alert(this.title);
             this.fun(this.title);
         },
-<<<<<<< Updated upstream
-
-    }
-
-});
-=======
     }
 });
 
->>>>>>> Stashed changes
