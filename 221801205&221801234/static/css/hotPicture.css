@@ -2,4 +2,12 @@
     border:1px solid #BBFFE3;
     border-radius: 10px;
     height: 700px;
+<<<<<<< Updated upstream
+=======
+    /*text-align: center;*/
+}
+#MySelect{
+    text-align: center;
+    /*margin:0 auto ;*/
+>>>>>>> Stashed changes
 }

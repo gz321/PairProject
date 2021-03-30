@@ -1,5 +1,9 @@
 // 服务端请求地址
+<<<<<<< Updated upstream
 let url = 'http://localhost:8080/MyShop_war_exploded/User';
+=======
+let url = 'http://localhost:8080/crawler_war_exploded/PaperListByTitle';
+>>>>>>> Stashed changes
 
 let vm = new Vue({
     el: ".container",
@@ -15,8 +19,12 @@ let vm = new Vue({
         tp:[],
 
         //后端向前端接收数据
+<<<<<<< Updated upstream
         list: [{"meeting":"CPVR","name":"wwsse","keywords":"weiwei,si","year":"2020"},
             {"meeting":"CPR","name":"wwse","keywords":"si","year":"2021"}],
+=======
+        list: [],
+>>>>>>> Stashed changes
         //向后端传递数据
 
     },
@@ -31,6 +39,22 @@ let vm = new Vue({
                 });
         },
 
+<<<<<<< Updated upstream
+=======
+        selectByKey(params){
+            let data = JSON.stringify({
+                keyword: params,
+            });
+            this.tp = this.list;
+            var that = this;
+            axios.post('http://localhost:8080/crawler_war_exploded/PaperListByKeyword',data).then(function (response) {
+                that.list = response.data;
+                that.tp=that.list;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+>>>>>>> Stashed changes
         //向后端搜索
         select(){
             if(this.title==''){
@@ -39,10 +63,19 @@ let vm = new Vue({
                 var that=this;
                 let data = JSON.stringify({
                     title: this.title,
+<<<<<<< Updated upstream
                     saying: this.saying
                 });
                 axios.post(url,data).then(function (response) {
                     that.list = response.data;
+=======
+
+                });
+                axios.post(url,data).then(function (response) {
+                    that.list = response.data;
+                    that.tp=that.list;
+
+>>>>>>> Stashed changes
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -85,7 +118,18 @@ let vm = new Vue({
 
         //跳转详情页
         send(title){
+<<<<<<< Updated upstream
             window.location.href="paperView.html"+"?"+"title"+"="+title;
         }
+=======
+            window.location.href="paperView.html"+"?"+"title"+"="+encodeURI(title);
+        },
+
+        get(){
+            this.params = window.location.href.split('=')[1];
+
+            this.selectByKey(this.params);
+        },
+>>>>>>> Stashed changes
     }
 });
